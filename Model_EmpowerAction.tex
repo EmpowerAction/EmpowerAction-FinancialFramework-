@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{EmpowerAction : Economia Descentralizada}
+
+\subsection*{1. Precio del Producto o Servicio}
+\begin{itemize}
+    \item Definido por oferta y demanda, cotizado en múltiples criptoactivos
+    \item Precio del producto o servicio en USD: \( P \)
+\end{itemize}
+\subsection*{2. Balance del Ecosistema}
+\subsubsection*{a. Ingresos}
+\begin{itemize}
+    \item Comisiones por transacción (a definir): Posibles comisiones: \( A \in [0.002, 0.04] \). Estas comisiones representan los cargos aplicados a las transacciones dentro del sistema.
+    \item Comisión por niveles (A definir): Niveles de Lealtad: \( N: f(x1,\ldots,x4) \). Los niveles de lealtad pueden influir en las comisiones, ofreciendo incentivos para los usuarios frecuentes.
+    \item Comisión por transacciones \( C_m = P \times A \times N \). Comisión  basada en el precio y niveles de lealtad.
+    \item Comisión por transacciones abonadas con EMP: \( C_{me} = P \times A \times N \times 0.5 \). Similar a la comisión por transacciones, pero con un factor adicional.
+    \item Ingresos totales en USD: \( \text{ING} = \sum C_m + C_{me} \). Suma de todas las comisiones para calcular los ingresos totales.
+\end{itemize}
+\subsubsection*{b. Egresos}
+
+\begin{itemize}
+    \item \( M_f \in [0.001, 0.48] \). Factor que representa  margen de gastos.
+    \item Gastos USD de Mantenimiento \( G_m \) (De mayor a menor, con objetivo de en 1\%) \( G_m = \text{ING} \times M_f \). Calcula los gastos de mantenimiento basados en los ingresos y el margen.
+    \item Gastos en USD Asignados a la inyección de liquidez: \( R_y_q = \text{ING} - G_m \). Esto determina la cantidad de dinero destinada a aumentar la liquidez en el sistema.
+    \item EMP: Token nativo: VALOR DOLAR: \( \text{EMP}_v \). Define el valor en dólares del token nativo.
+    \item Cantidad de EMP a recomprar y quemar(EMq): \( \text{EM}_q = R_y_q / \text{EMP}_v \). Calcula la cantidad de tokens a recomprar y eliminar.
+    \item Si \( R_y_q \) Absorbe la oferta total de tokens, el resto se convierte en \( R \). Esta condición asegura que la oferta y la demanda de tokens estén equilibradas.
+    \item Reservas en USD(R): \( R = R_y_q - (\text{EM}_q / \text{EMP}_v) \).
+    \item \( R \) Es utilizado para vigorizar la liquidez a través de diversos mecanismos decididos en consenso y basados en datos. Esto permite que el sistema mantenga una operación fluida y eficiente.
+\end{itemize}
+
+
+\subsection*{3. Emisión y Circulación de Tokens basada en créditos (EMP y DEUS)}
+El Crédito se emite cuando un usuario tenga fondos insuficientes para abonar servicios de una denominación menor al 40\% de su crédito en USD total en la plataforma, Se liberará directamente en la cuenta del proveedor. (EMPe). Esto permite una mayor flexibilidad en las transacciones dentro del sistema.
+
+\subsubsection*{a. Emisión por Crédito Utilizado}
+\subsubsection*{Créditos Mutuos}
+\begin{align*}
+    \text{CRD} & \in \{x1,\ldots,x150\}, \text{ donde } x \text{ podría ser la cantidad base en dólares}. \text{ Representa el rango de créditos disponibles.} \\
+    \text{Crédito Total en USD (CRDt):} & \text{ Vinculado a las Reservas, determina el crédito total disponible en el sistema.} \\
+    \text{CRusuario} & = \text{CRDu} \times \text{ factor de comportamiento, podría estar en el rango } [0.5, 1.5] \text{ dependiendo de su historial. Esto permite ajustar el crédito según el comportamiento del usuario.}
+\end{align*}
+
+\subsubsection*{EMP}
+Se emite la cantidad de tokens representativa por valor nominal del servicio contratado (Definido entre partes). Esto vincula los tokens con el valor real de los servicios.
+
+\subsubsection*{Articulación}
+\begin{align*}
+    E_i & = \text{Cantidad inicial de tokens en circulación.} \\
+    \text{Emisión de deuda ejecutada por Crédito Utilizado: CRDe} & = P. \text{ Calcula la emisión basada en el precio del servicio.} \\
+    \text{Emisión de token EMP: EMPe} & = \text{EMP}_v \times \text{CRDe}. \text{ Convierte el crédito utilizado en tokens EMP.} \\
+    \text{Emisión total EMP: EMPet} & = E_{\text{inicial}} + \sum \text{ EMPe} - \text{EMP}_q. \text{ Calcula la emisión total de tokens, incluyendo los nuevos y los quemados.}
+\end{align*}
+
+El prestatario recibirá “DUS” wrapped intransferible y eliminable por parte de la misma plataforma. Instrumento de Deuda.
+
+\subsubsection*{DUS}
+El Pago se realiza en EMP o USD o ETH, libera su cupo de deuda DUS y permite Eliminar DUS de su wallet. Permitiendo utilizar nuevamente la plataforma. Esto proporciona un mecanismo para gestionar y liquidar deudas dentro del sistema.
+
+\subsubsection*{Articulación}
+\begin{align*}  
+    \text {Crédito total en USD inicialmente (D):} & 1 \text{Dólar por cuenta, basado en las reservas.} \\
+    \text{Valor de Wrapped DUS:} & 1 \text{ Dólar}. \text{Valor de los tokens de deuda.} \\
+    \text{Emisión Total DUS: DUSe} & = \text{DUS}_v \times \text{CRe}. \text{Emisión de tokens de deuda.} \\
+    \text{Emisión total deuda a usuario (DUSu):} & \text{DUSu} = \sum \text{DUSe} < D. \\
+    \text{Tokens DES a Quemar: DESq} & = \text{DPago}. \text{ Define los tokens a eliminar.} \\
+    \text{Emisión total de deuda en dólares de la plataforma (DUSt):} & \text{DUSt} = \sum \text{DUSu} 
+\end{align*}
+
+\subsubsection*{b. Política de Recomprar y Quemar}
+\begin{itemize}
+    \item Tokens Quemados $EMq = Ryq/EMPv$ 
+    \item Si $Ryq$ Absorbe la oferta Total de Tokens: 
+    \item Si Emq $>$ EMPtotal, entonces R =+ Ryq - (EMq x EMPv).
+    \item Si EMq $<$ EMPtotal, entonces R =+ 0.    
+    \item Actualización de la oferta de tokens:
+    \item $EMPtotal\_nuevo = EMPtotal$ = $EMq$. \text{ Actualiza la oferta total de tokens en circulación.}
+\end{itemize}
+\end{document}
