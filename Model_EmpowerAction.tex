@@ -8,28 +8,19 @@
 El documento presenta un marco integral para nuestra economía descentralizada "EmpowerAction." 
 Se enfoca en la estructuración y regulación de precios por oferta y demanda, balances, emisiones, y circulación de tokens, así como en la gestión de créditos dentro del sistema.
 
-\subsection*{1. Precio del Producto o Servicio:}
- Se establece mediante la oferta y la demanda y se cotiza en múltiples criptoactivos. Se define un precio en USD para cada producto o servicio.
-
-\subsection*{2. Balance del Ecosistema:} Se divide en ingresos y egresos. Los ingresos provienen de diversas comisiones, mientras que los egresos incluyen gastos de mantenimiento y asignaciones para inyección de liquidez. Se introduce un token nativo (EMP) y se establecen mecanismos para recomprar y quemar tokens.
-
-\subsection*{3. Emisión y Circulación de Tokens basada en créditos (EMP y DEUS):} Se detallan los procedimientos para la emisión de créditos y tokens, permitiendo una mayor flexibilidad en las transacciones. Se introduce un mecanismo para gestionar y liquidar deudas dentro del sistema.
-
-\subsubsection*{4. Política de Recomprar y Quemar:} Se establecen políticas para mantener el equilibrio entre la oferta y la demanda de tokens, incluyendo la actualización de la oferta total de tokens en circulación.
-
 
 \subsection*{1. Precio del Producto o Servicio}
 \begin{itemize}
-    \item Definido por oferta y demanda, cotizado en múltiples criptoactivos
+    \item El precio está definido por la oferta y la demanda y se cotiza en múltiples criptoactivos.
     \item Precio del producto o servicio en USD: \( P \)
 \end{itemize}
 \subsection*{2. Balance del Ecosistema}
 \subsubsection*{a. Ingresos}
 \begin{itemize}
-    \item Comisiones por transacción (a definir): Posibles comisiones: \( A \in [0.002, 0.04] \). Estas comisiones representan los cargos aplicados a las transacciones dentro del sistema.
+    \item Comisiones por transacción (a definir): Las posibles comisiones están en el rango: \( A \in [0.002, 0.04] \). Aplicadas a las transacciones dentro del sistema.
     \item Comisión por niveles (A definir): Niveles de Lealtad: \( N: f(x1,\ldots,x4) \). Los niveles de lealtad pueden influir en las comisiones, ofreciendo incentivos para los usuarios frecuentes.
     \item Comisión por transacciones \( C_m = P \times A \times N \). Comisión  basada en el precio y niveles de lealtad.
-    \item Comisión por transacciones abonadas con EMP: \( C_{me} = P \times A \times N \times 0.5 \). Similar a la comisión por transacciones, pero con un factor adicional.
+    \item Comisión por transacciones abonadas con EMP(Token nativo): \( C_{me} = P \times A \times N \times 0.5 \). 
     \item Ingresos totales en USD: \( \text{ING} = \sum C_m + C_{me} \). Suma de todas las comisiones para calcular los ingresos totales.
 \end{itemize}
 \subsubsection*{b. Egresos}
@@ -48,7 +39,7 @@ Se enfoca en la estructuración y regulación de precios por oferta y demanda, b
 
 
 \subsection*{3. Emisión y Circulación de Tokens basada en créditos (EMP y DEUS)}
-El Crédito se emite cuando un usuario tenga fondos insuficientes para abonar servicios de una denominación menor al 40\% de su crédito en USD total en la plataforma, Se liberará directamente en la cuenta del proveedor. (EMPe). Esto permite una mayor flexibilidad en las transacciones dentro del sistema.
+El Crédito se emite cuando un usuario tiene fondos insuficientes para abonar servicios de una denominación menor al 40\% de su crédito en USD total en la plataforma, Este se liberará directamente en la cuenta del proveedor. 
 
 \subsubsection*{a. Emisión por Crédito Utilizado}
 \subsubsection*{Créditos Mutuos}
@@ -88,17 +79,17 @@ El Pago se realiza en EMP o USD o ETH, libera su cupo de deuda DUS y permite Eli
 
 \subsubsection*{4. Política de Recomprar y Quemar}
 \begin{itemize}
-    \item Tokens Quemados \(EMq = \frac{Ryq}{EMPv}\)
+    \item Tokens Quemados \(EMq = \frac{Ryq}{EMP_v}\)
     \item Si \(R_yq\) Absorbe la oferta Total de Tokens:
-    \item Si \(EM_q > \text{EMPtotal}\), entonces \(R = R + R_yq - (EM_q \times EMP_v)\).
-    \item Si \(EM_q < \text{EMPtotal}\), entonces \(R = R + 0\).
+    \item Si \(EMP_q > \text{EMPtotal}\), entonces \(R = R + R_yq - (EMP_q \times EMP_v)\).
+    \item Si \(EMP_q < \text{EMPtotal}\), entonces \(R = R + 0\).
     \item Actualización de la oferta de tokens:
-    \item \(EMPtotal\_nuevo = EMPtotal - EMq\). Actualiza la oferta total de tokens en circulación.
+    \item \(EMPtotal\_nuevo = EMPtotal - EMP_q\). Actualiza la oferta total de tokens en circulación.
 \end{itemize}
 
 
 \subsubsection*{En resumen:}
-EmpowerAction propone un sistema económico descentralizado robusto y flexible, con mecanismos claros y transparentes para la gestión de precios, comisiones, tokens, y créditos. La estructura presentada busca garantizar una operación fluida y eficiente, incentivando la lealtad y permitiendo la adaptabilidad a las condiciones cambiantes del mercado. La implementación de este sistema podría representar un gran paso hacia una economía digital más transparente, justa, y resiliente.
+EmpowerAction propone un sistema económico descentralizado robusto y flexible, con mecanismos claros y transparentes para la gestión de precios, comisiones, tokens, y créditos. La estructura presentada busca ser una base para una operación fluida y eficiente, incentivando la participación, la transparencia y la responsabilidada indiavidual, permitiendo la adaptabilidad necesaria a las condiciones cambiantes del mercado. 
 
 
 \end{document}
