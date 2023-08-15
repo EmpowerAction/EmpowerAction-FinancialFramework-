@@ -1,6 +1,6 @@
 # EmpowerAction : Economia Descentralizada
 
-### El documento presenta un marco integral para nuestra economía descentralizada "EmpowerAction."
+### El documento presenta un marco integral para nuestra economía descentralizada *EmpowerAction.*
 Se enfoca en la estructuración y regulación de precios por oferta y demanda, balances, emisiones, y circulación de tokens, así como en la gestión de créditos dentro del sistema.
 
 ### 1. Precio del Producto o Servicio:
@@ -14,3 +14,6 @@ Se detallan los procedimientos para la emisión de créditos y tokens, permitien
 
 ### 4. Política de Recomprar y Quemar: 
 Se establecen políticas para mantener el equilibrio entre la oferta y la demanda de tokens, incluyendo la actualización de la oferta total de tokens en circulación.
+
+### En Resumen
+*EmpowerAction* propone un sistema económico descentralizado robusto y flexible, con mecanismos claros y transparentes para la gestión de precios, comisiones, tokens, y créditos. La estructura presentada busca garantizar una operación fluida y eficiente, incentivando la lealtad y permitiendo la adaptabilidad a las condiciones cambiantes del mercado. La implementación de este sistema podría representar un gran paso hacia una economía digital más transparente, justa, y resiliente.
