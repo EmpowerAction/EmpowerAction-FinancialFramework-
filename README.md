@@ -16,4 +16,4 @@ Se detallan los procedimientos para la emisión de créditos y tokens, permitien
 Se establecen políticas para mantener el equilibrio entre la oferta y la demanda de tokens, incluyendo la actualización de la oferta total de tokens en circulación.
 
 ### En Resumen
-*EmpowerAction* propone un sistema económico descentralizado robusto y flexible, con mecanismos claros y transparentes para la gestión de precios, comisiones, tokens, y créditos. La estructura presentada busca garantizar una operación fluida y eficiente, incentivando la lealtad y permitiendo la adaptabilidad a las condiciones cambiantes del mercado. La implementación de este sistema podría representar un gran paso hacia una economía digital más transparente, justa, y resiliente.
+*EmpowerAction* propone un sistema económico descentralizado robusto y flexible, con mecanismos claros y transparentes para la gestión de precios, comisiones, tokens, y créditos. La estructura presentada busca ser una base para una operación fluida y eficiente, incentivando la participación, la transparencia y la responsabilidada indiavidual, permitiendo la adaptabilidad necesaria a las condiciones cambiantes del mercado. 
